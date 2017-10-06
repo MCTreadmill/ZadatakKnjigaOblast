@@ -37,6 +37,14 @@ public class Knjiga {
         this.datumIzdanja = datumIzdanja;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNaslov() {
         return naslov;
     }
