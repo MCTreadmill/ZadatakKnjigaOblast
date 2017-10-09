@@ -52,6 +52,14 @@ public class Oblast {
         this.pocetnaStrana = pocetnaStrana;
     }
 
+    public Knjiga getKnjiga() {
+        return knjiga;
+    }
+
+    public void setKnjiga(Knjiga knjiga) {
+        this.knjiga = knjiga;
+    }
+
     @Override
     public String toString() {
         return "Oblast{" +
