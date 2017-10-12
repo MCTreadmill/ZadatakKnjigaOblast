@@ -22,7 +22,7 @@ public class Knjiga {
     @DatabaseField(columnName = POLJE_DATUM_IZDAVANJA)
     private Date datumIzdanja;
 
-    private boolean prisutna;
+    public static Boolean prisutna = true;
 
     @ForeignCollectionField(foreignFieldName = "knjiga",eager=false,maxEagerLevel = 1)
     private ForeignCollection<Oblast> oblasti;
@@ -78,4 +78,6 @@ public class Knjiga {
                 "datum_izdavanja=" + datumIzdanja + '\'' +
                 '}';
     }
+
+
 }
